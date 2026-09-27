@@ -1,3 +1,4 @@
+
 let brief={items:[],saved:[]};
 const $=s=>document.querySelector(s);
 const escape=s=>String(s||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
