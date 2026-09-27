@@ -1,0 +1,98 @@
+{
+  "date": "September 27, 2026",
+  "updatedAt": "2026-09-27T16:30:00+08:00",
+  "lead": "Today’s signal: Design is becoming AI’s most important interface",
+  "items": [
+    {
+      "title": "Designing for the edges improves the center",
+      "url": "https://www.fastcompany.com/91574333/designing-for-the-edges-improves-the-center",
+      "summary": "When products work for people with the most constraints, they tend to work better for everyone.",
+      "category": "Design",
+      "source": "Fast Company",
+      "id": "v2-1",
+      "rank": 1,
+      "why": "包容性设计不仅解决边缘用户的问题，也能让所有人的使用体验更清晰。"
+    },
+    {
+      "title": "What should the future look like? Inside the tech-funded program to create a new aesthetic",
+      "url": "https://www.fastcompany.com/91581814/what-should-the-future-look-like-inside-the-tech-funded-program-to-create-a-new-aesthetic",
+      "summary": "A program exploring what a new visual language for the 21st century could look like.",
+      "category": "Design",
+      "source": "Fast Company",
+      "id": "v2-2",
+      "rank": 2,
+      "why": "观察科技、资本与审美如何共同塑造未来产品的视觉语言。"
+    },
+    {
+      "title": "Design history, as told through 125 objects",
+      "url": "https://www.fastcompany.com/91571436/cooper-hewitt-permanent-collection-galleries-design-across-time",
+      "summary": "Cooper Hewitt uses 125 objects to connect design history with contemporary practice.",
+      "category": "Design",
+      "source": "Fast Company",
+      "id": "v2-3",
+      "rank": 3,
+      "why": "从经典案例中理解形式、材料和用户需求如何随时代变化。"
+    },
+    {
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "summary": "A legal AI workspace combining frontier models, connected data and firm-specific workflows.",
+      "category": "AI Industry",
+      "source": "OpenAI",
+      "id": "v2-4",
+      "rank": 4,
+      "why": "专业工具的机会正在从聊天窗口转向完整、可信的工作流设计。"
+    },
+    {
+      "title": "Helping older adults use AI in everyday life",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "summary": "Hands-on workshops help older adults build practical AI skills safely.",
+      "category": "AI Industry",
+      "source": "OpenAI",
+      "id": "v2-5",
+      "rank": 5,
+      "why": "适老化设计会成为 AI 产品可用性与信任设计的重要试验场。"
+    },
+    {
+      "title": "Basedash Models",
+      "url": "https://www.producthunt.com/products/basedash",
+      "summary": "Define a reusable model once, then query it like a table.",
+      "category": "New Products",
+      "source": "Product Hunt",
+      "id": "v2-6",
+      "rank": 6,
+      "why": "关注它如何把复杂的数据结构转化为更容易理解和操作的界面。"
+    },
+    {
+      "title": "People thought this MLB hat had a defect. It’s actually a clever hidden reference",
+      "url": "https://www.fastcompany.com/91573343/phillies-mlb-hat-liberty-bell",
+      "summary": "A seemingly broken graphic becomes a memorable piece of visual storytelling.",
+      "category": "Design",
+      "source": "Fast Company",
+      "id": "v2-7",
+      "rank": 7,
+      "why": "一个微小的视觉细节如何承载文化记忆，是品牌设计的好案例。"
+    },
+    {
+      "title": "Steam Frame",
+      "url": "https://www.producthunt.com/products/steam-machine",
+      "summary": "A wearable PC concept for accessing a Steam library.",
+      "category": "New Products",
+      "source": "Product Hunt",
+      "id": "v2-8",
+      "rank": 8,
+      "why": "新硬件形态会迫使交互设计重新思考屏幕、输入与使用场景。"
+    }
+  ],
+  "saved": [],
+  "reviews": {
+    "weekly": {
+      "note": "每周一更新：汇总上周最重要的设计、AI 与产品变化。",
+      "items": []
+    },
+    "monthly": {
+      "note": "每月第一天更新：提炼上月值得长期关注的趋势。",
+      "items": []
+    }
+  }
+}
