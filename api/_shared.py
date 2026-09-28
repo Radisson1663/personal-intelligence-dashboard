@@ -1,10 +1,8 @@
 """Shared Supabase and HTTP helpers for the Vercel functions."""
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler
-from pathlib import Path
 import json, os, urllib.error, urllib.parse, urllib.request
 
-ROOT = Path(__file__).resolve().parents[1]
 
 def json_response(handler: BaseHTTPRequestHandler, payload, status=200):
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -13,11 +11,21 @@ def json_response(handler: BaseHTTPRequestHandler, payload, status=200):
         handler.send_header(key, value)
     handler.end_headers(); handler.wfile.write(body)
 
+
 def read_body(handler):
     return json.loads(handler.rfile.read(int(handler.headers.get("Content-Length", "0"))) or b"{}")
 
+
 def fallback_brief():
-    return json.loads((ROOT / "public" / "brief.json").read_text(encoding="utf-8"))
+    return {
+        "date": datetime.now().strftime("%B %d, %Y").replace(" 0", " "),
+        "updatedAt": None,
+        "lead": "正在准备第一期真实新闻。",
+        "items": [],
+        "saved": [],
+        "reviews": {},
+    }
+
 
 def supabase_request(path, method="GET", payload=None, prefer=None):
     url = os.environ.get("SUPABASE_URL", "").rstrip("/"); key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
@@ -31,6 +39,7 @@ def supabase_request(path, method="GET", payload=None, prefer=None):
             raw = response.read(); return json.loads(raw) if raw else None
     except urllib.error.HTTPError as error:
         raise RuntimeError(f"Supabase {error.code}: {error.read().decode('utf-8', 'replace')[:300]}") from error
+
 
 def latest_brief():
     briefs = supabase_request("daily_briefs?select=*&order=brief_date.desc&limit=1")
