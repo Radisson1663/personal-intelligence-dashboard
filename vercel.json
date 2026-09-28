@@ -1,1 +1,1 @@
-{"outputDirectory":"public","cleanUrls":true,"crons":[{"path":"/api/refresh","schedule":"0 0 * * *"}]}
+{"outputDirectory":null,"cleanUrls":true,"crons":[{"path":"/api/refresh","schedule":"0 0 * * *"}]}
